@@ -1,10 +1,10 @@
-/* index.css */
 body {
   background-color: #181720;
   font-family: 'Poppins', sans-serif;
   color: #ffffff;
   margin: 0;
   padding: 0;
+  line-height: 1.6;
 }
 
 .container {
@@ -17,8 +17,124 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-header, footer {
+/* ---------------------------
+   Header
+---------------------------- */
+
+.header-container {
   padding: 20px 0;
 }
+
+.nav-list {
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-list li a:hover {
+  color: #00bfff;
+}
+
+/* ---------------------------
+   Banner
+---------------------------- */
+
+.banner {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.button-group {
+  margin-top: 20px;
+}
+
+/* Button styles */
+button.primary {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-right: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.primary:hover {
+  background-color: #0056b3;
+}
+
+button.secondary {
+  background-color: transparent;
+  color: #007bff;
+  border: 2px solid #007bff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button.secondary:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* ---------------------------
+   Gallery
+---------------------------- */
+
+.gallery-row {
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.gallery-item {
+  flex: 1 1 22%;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+  transition: transform 0.4s ease;
+}
+
+.gallery-img:hover {
+  transform: scale(1.05);
+}
+
+/* ---------------------------
+   Footer
+---------------------------- */
+
+.footer-content {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer-link {
+  margin: 0 10px;
+  font-weight: 500;
+  color: #ccc;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #ffffff;
+}
+

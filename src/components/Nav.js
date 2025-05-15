@@ -1,10 +1,10 @@
 function Nav(props) {
   return (
     <nav>
-      <ul className="flex">
+      <ul className="flex nav-list">
         {props.links.map((link, index) => (
           <li key={index}>
-            <a href={link.url}>{link.label}</a>
+            <a href={link.url}>{link.name}</a>
           </li>
         ))}
       </ul>
@@ -13,4 +13,5 @@ function Nav(props) {
 }
 
 export default Nav;
+
 
